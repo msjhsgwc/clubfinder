@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="quiz.css" type = "text/css">
+<title>Club Compatibility</title>
+<div id="nav">
+  <ul>
+
+    <li><a href="about.html">about</a></li>
+    <li><a href="quiz.html">take the quiz!</a></li>
+
+    <li><a href="clubs.html">clubs</a></li>
+
+  </ul>
+</div>
+<div id="logo">
+  <img src="mission-hs.jpg" alt="logo"/> </div>
 <style>
 body {
-background-color: lightblue;
-font-family: Helvetica;
+background-color: white;
+font-family: "courier new";
 }
 
 #main {
 width: 80%;
 max-width: 950px;
-border: 1px gray solid;
+border: 1px DarkGreen ;
 margin: auto;
 padding: 10px;
 background-color: white;
@@ -20,11 +33,14 @@ border-radius: 10px;
 
 #header {
 margin-top: 0;
-border: 2px solid black;
+margin-left: 0;
+margin-right: 0;
+border: 2px DarkGreen ;
 padding: 5px;
-height: 250px;
-background: beige;
-background-image: url("code.jpg");
+height: 500px;
+background: white;
+background-image: url("mission.jpg");
+background-size: cover ;
 color: white;
 }
 
@@ -52,10 +68,11 @@ margin-top: 20px;
 
 </head>
 <body>
+  <div id="header">
+  <h1>Your Club Compatibility</h1>
+  </div>
 <div id="main">
-<div id="header">
-<h1>JavaScript Quiz</h1>
-</div>
+
 <form id="form1">
 
 <h2>Which is the best description of a variable?</h2>
