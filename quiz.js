@@ -240,7 +240,7 @@ $('#submit-btn').click(function () {
 		<br><br><br>\
 		';
 	} else if(total > 0) {
-		document.getElementById('results').innerHTML = '<b>You are extroverted!</b><br><br>\
+		document.getElementById('results').innerHTML = '<b>You should try clubs like:</b><br><br>\
 		National Art Honors Society (Mr. Christensen)\n\
 		<br><br>\
 		NAHS is a club here students explore their interests in art. At our meetings, we work on club and personal projects, and get to know each other well. Club bonding is held on field trips and outside activities. Club projects include murals for the school, participation in the yearly trashy fashion show, art exhibitions, and smaller fun crafts. \n\
@@ -252,7 +252,7 @@ $('#submit-btn').click(function () {
 		<br>\
 		';
 	} else {
-		document.getElementById('results').innerHTML = '<b>You are ambiverted!</b><br><br>\
+		document.getElementById('results').innerHTML = '<b>You should try clubs like:</b><br><br>\
 		MSJ Tech and Robotics (Mr. Brucker)\n\
 		<br><br>\
 		 The Tech and Robotics Club, Mission San Jose’s premier science, engineering and technology organization, welcomes students who seek to live on the edge of modern technological achievement. A diverse number of valuable opportunities, from competitive events to volunteering roles, are available to active members. We are home to MSJ’s FIRST Tech Challenge and are in charge of MSJ’s experienced Team America Rocketry Challenge program. No prior experience is necessary! Visit us at www.msjrobotics.com, or contact us at roboticsmsj@gmail.com. Join us, and experience engineering, teamwork, and success at its finest! \n\
