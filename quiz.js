@@ -6,65 +6,65 @@
 
 var prompts = [
 {
-	prompt: 'I find it difficult to introduce myself to people',
+	prompt: "I enjoy listening to music.",
 	weight: -1,
 	class: 'group0'
 },
 {
-	prompt: 'I get so lost in my thoughts I ignore or forget my surroundings',
+	prompt: 'I like playing/learning instruments.',
 	weight: -1,
 	class: 'group1'
 },
 {
-	prompt: 'I do not usually initiate conversations',
+	prompt: 'I like drawing/painting in my free time.',
 	weight: -1,
 	class: 'group2'
 },
 {
-	prompt: 'I prefer not to engage with people who seem angry or upset',
+	prompt: 'I like projects that involve creativity.',
 	weight: -1,
 	class: 'group3'
 },
 {
-	prompt: 'I choose my friends carefully',
+	prompt: 'I enjoy my STEM classes.',
 	weight: -1,
 	class: 'group4'
 },
 {
-	prompt: 'I find it difficult to tell stories about myself',
+	prompt: 'I like to use my knowledge to solve real-world problems.',
 	weight: -1,
 	class: 'group5'
 },
 {
-	prompt: 'I am usually highly motivated and energetic',
+	prompt: 'I enjoy public speaking.',
 	weight: 1,
 	class: 'group6'
 },
 {
-	prompt: 'I find it easy to walk up to a group of people and join in conversation',
+	prompt: 'I take leadership roles in group projects.',
 	weight: 1,
 	class: 'group7'
 },
-{
-	prompt: 'Being adaptable is more important than being organized',
-	weight: 1,
-	class: 'group8'
-},
-{
-	prompt: 'I care more about making sure no one gets upset than winning a debate',
-	weight: 1,
-	class: 'group9'
-},
-{
-	prompt: 'I often do not feel I have to justify myself to people',
-	weight: 1,
-	class: 'group10'
-},
-{
-	prompt: 'I would rather improvise than spend time coming up with a detailed plan',
-	weight: 1,
-	class: 'group11'
-}
+// {
+// 	prompt: 'Being adaptable is more important than being organized',
+// 	weight: 1,
+// 	class: 'group8'
+// },
+// {
+// 	prompt: 'I care more about making sure no one gets upset than winning a debate',
+// 	weight: 1,
+// 	class: 'group9'
+// },
+// {
+// 	prompt: 'I often do not feel I have to justify myself to people',
+// 	weight: 1,
+// 	class: 'group10'
+// },
+// {
+// 	prompt: 'I would rather improvise than spend time coming up with a detailed plan',
+// 	weight: 1,
+// 	class: 'group11'
+// }
 
 ]
 
