@@ -235,7 +235,7 @@ $('#submit-btn').click(function () {
 		<br><br><br>\
 		Mission Guitar (Mr. Mallon)\n\
 		<br><br>\
-		The purpose of Mission Guitar is to promote guitar in Mission. Our club will perform at a variety of locations, and raise money for our club. We will perform at parks, senior centers, and schools. Students will receive service learning hours for performances, if applicable.e happy teach anyone willing to learn, and occasionally hold ciphers to showcase everyone’s personal abilities.\n\
+		The purpose of Mission Guitar is to promote guitar in Mission. Our club will perform at a variety of locations, and raise money for our club. We will perform at parks, senior centers, and schools. Students will receive service learning hours for performances, if applicable.e happy teach anyone willing to learn, and occasionally hold ciphers to showcase everyone’s personal abilities.\
 		<br>\\n\n\
 		<br><br><br>\
 		';
