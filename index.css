@@ -2,17 +2,19 @@
 	width: 60%;
 	display: inline-block;
 	text-align: right;
-	float: right;
+	float: center;
 }
 	#nav ul{}
 		#nav ul li{
 			display: inline-block;
 			height: 62px;
+			padding-top: 25px;
 		}
 			#nav ul li a{
 				padding: 20px;
 				background: DarkOliveGreen;
 				color: white;
+				float: center;
 			}
 			#nav ul li a:hover{
 				background-color: DarkSeaGreen;
