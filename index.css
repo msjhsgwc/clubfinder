@@ -72,9 +72,8 @@ body{
 		  align-items: center;
 		  justify-content: center;
 		  color: white;
-			text-shadow: 2px 2px #DCDCDC;
 			font-size: 50px;
-
+		  text-shadow: 0 0 5px #000;
 		}
 
 		.parallax::after {
@@ -116,6 +115,8 @@ body{
 }
 #clubinfo{
 	font-family: Palatino;
+	text-align: center;
+	padding-left: 160px;
 }
 .clubname{
 	font-family: Palatino;
@@ -128,8 +129,14 @@ body{
 #clubindex{
 	font-family: aliensandcows;
 	font-size: 70px;
+	padding-left: 160px;
 }
 .clubblock{
-	width: 33%;
-	border: black;
+	width: 50%;
+}
+.fleft{
+	float: left;
+}
+.fright{
+	float: right;
 }
