@@ -143,3 +143,6 @@ body{
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
+.h1, h1 {
+    font-size: 50px;
+}
