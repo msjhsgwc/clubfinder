@@ -1,71 +1,67 @@
-// scripts here:
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="quiz.css" href="quiz.css" type = "text/css">
+  <script src="quiz.js"></script>
+	<title>Find the club for you!</title>
+	<!-- ANIMATE CSS -->
+	<link rel="quiz.css" type="text/css" href="css/animate.css">
+	<!-- FONTAWESOME -->
+	<link rel="quiz.css" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="quiz.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- CUSTOM -->
+	<link rel="quiz.css" type="text/css" href="quiz.css">
+</head>
+<!-- BODY -->
+<body>
 
-	function submitQuiz() {
-		console.log('submitted');
+	<div class="container text-center">
+		<h1>Find the club for you!</h1>
+	</div>
+	<div class="container text-center">
+		<ul id="quiz" class="list-group">
 
-	// get each answer score
-		function answerScore (qName) {
-			var radiosNo = document.getElementsByName(qName);
+		</ul>
+	</div>
 
-			for (var i = 0, length = radiosNo.length; i < length; i++) {
-   				if (radiosNo[i].checked) {
-			// do something with radiosNo
-					var answerValue = Number(radiosNo[i].value);
-				}
-			}
-			// change NaNs to zero
-			if (isNaN(answerValue)) {
-				answerValue = 0;
-			}
-			return answerValue;
-		}
+	<div class="container text-center hide results">
+		<!-- <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4"> -->
+		<!-- <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4"> -->
+		<!-- <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4"> -->
+	</div>
 
-	// calc score with answerScore function
-		var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4'));
-		console.log("CalcScore: " + calcScore); // it works!
+	<!-- <div class="container progress">
+		<div id="intro-bar" class="progress-bar" style="width: 15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+			15%
+		</div>
+		<div id="extro-bar" class="progress-bar bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+			30%
+		</div>
+	</div> -->
 
-	// function to return correct answer string
-		function correctAnswer (correctStringNo, qNumber) {
-			console.log("qNumber: " + qNumber);  // logs 1,2,3,4 after called below
-			return ("The correct answer for question #" + qNumber + ": &nbsp;<strong>" +
-				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
-			}
+	<div class="container text-center results hide">
+		<p id="results"></p>
+	</div>
 
-	// print correct answers only if wrong (calls correctAnswer function)
-		if (answerScore('q1') === 0) {
-			document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
-		}
-		if (answerScore('q2') === 0) {
-			document.getElementById('correctAnswer2').innerHTML = correctAnswer('correctString2', 2);
-		}
-		if (answerScore('q3') === 0) {
-			document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
-		}
-		if (answerScore('q4') === 0) {
-			document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
-		}
+	<div class="container text-center bottom">
+		<button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
 
-	// calculate "possible score" integer
-		var questionCountArray = document.getElementsByClassName('question');
+		<button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+	</div>
+	<!-- SCRIPTS -->
 
-		var questionCounter = 0;
-		for (var i = 0, length = questionCountArray.length; i < length; i++) {
-			questionCounter++;
-		}
-
-	// show score as "score/possible score"
-		var showScore = "Your Score: " + calcScore +"/" + questionCounter;
-	// if 4/4, "perfect score!"
-		if (calcScore === questionCounter) {
-			showScore = showScore + "&nbsp; <strong>Perfect Score!</strong>"
-		};
-		document.getElementById('userScore').innerHTML = showScore;
-	}
-
-$(document).ready(function() {
-
-	$('#submitButton').click(function() {
-		$(this).addClass('hide');
-	});
-
-});
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- CUSTOM -->
+	<script type="quiz.js" src="js/main.js"></script>
+</body>
+</html>
