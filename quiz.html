@@ -10,9 +10,25 @@
     <li><a href="quiz.html">take the quiz!</a></li>
 
     <li><a href="clubs.html">clubs</a></li>
+    </ul>
+    </div>
+    <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Personality Test</title>
+    	<!-- ANIMATE CSS -->
+    	<link rel="stylesheet" type="text/css" href="css/animate.css">
+    	<!-- FONTAWESOME -->
+    	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    	<!-- Latest compiled and minified CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    	<!-- Optional theme -->
+    	<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    	<!-- GOOGLE FONT -->
+    	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    	<!-- CUSTOM -->
 
-  </ul>
-</div>
+
+
 <div id="logo">
   <img src="mission-hs.jpg" alt="logo"/> </div>
 <style>
@@ -21,15 +37,6 @@ background-color: white;
 font-family: aliensandcows;
 }
 
-#main {
-width: 80%;
-max-width: 950px;
-border: 1px DarkGreen ;
-margin: auto;
-padding: 10px;
-background-color: white;
-border-radius: 10px;
-}
 
 #header {
 margin-top: 0;
@@ -47,24 +54,7 @@ font-size: 70px;
 text-shadow: 2px 2px #DCDCDC;
 }
 
-label {
-display: block;
-}
 
-input {
-width: 30px;
-margin-left: 20px;
-}
-
-h2 {
-clear: both;
-padding-top: 20px;
-}
-
-button {
-width: 100px;
-margin-top: 20px;
-}
 
 </style>
 
@@ -74,78 +64,47 @@ margin-top: 20px;
   <div id="header">
   <h1>Your Club Compatibility</h1>
   </div>
-<div id="main" >
+  <div class="container text-center">
+  		<h1>Personality Test</h1>
+  	</div>
+  	<div class="container text-center">
+  		<ul id="quiz" class="list-group">
 
-<form id="form1">
-<div id="quizqs">
-<h2>Which one interests you the most?</h2>
-      <label for="var_string"><input type="radio" name="variable" value="0" class="questions" id="var_string" />Music</label>
-      <label for="var_join"><input type="radio" name="variable" value="0" class="questions" id="var_join" />Art</label>
-      <label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Stem</label>
-      <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Leadership</label>
+  		</ul>
+  	</div>
 
-      <h2>What do you do in your free time?<h2>
-      <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Listen to music</label>
-      <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Draw or paint</label>
-      <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Math H.W.</label>
-      <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Cook</label>
+  	<div class="container text-center hide results">
+  		<img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+  		<img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+  		<img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+  	</div>
 
-      <h2>If you were stranded on a desert island with only one item, what would it be?</h2>
-      <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Music</label>
-      <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />Camera</label>
-      <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Chemistry kit</label>
-      <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Basketball</label>
+  	<!-- <div class="container progress">
+  		<div id="intro-bar" class="progress-bar" style="width: 15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+  			15%
+  		</div>
+  		<div id="extro-bar" class="progress-bar bg-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+  			30%
+  		</div>
+  	</div> -->
 
-      <h2>It's your birthday and someone just gave you the perfect gift. What is it?/<h2>
-      <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Tickets to your favorite artist’s concert</label>
-      <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />Latest model of your favorite camera</label>
-      <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Tickets to a science and technology museum</label>
-      <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />A chance to meet the president</label>
-<button type="submit" value="Submit">Submit</button>
-</div>
-</form>
-<div id="quizqs">
-<p>You might be interested in: <span id="grade">__</span></p>
-</div>
-<p id="grade2"></p>
+  	<div class="container text-center results hide">
+  		<p id="results"></p>
+  	</div>
 
+  	<div class="container text-center bottom">
+  		<button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
 
+  		<button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+  	</div>
+  	<!-- SCRIPTS -->
 
-<script>
-document.getElementById("form1").onsubmit=function() {
-       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
-	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
-	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
-	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
-
-
-	   result = variable + sub + con + ifstate;
-
-	document.getElementById("grade").innerHTML = result;
-
- grading = [
-	   {score:0,feedback:"I don't think you studied", image: "none.jpg"},
-	   {score:25,feedback:"You need to spend more time. Try again", image: "poor.jpg"},
-	   {score:50,feedback:"I think you could do better. Try again.", image: "avg.jpg"},
-	   {score:75,feedback:"So close. Try again.", image: "above.jpg"},
-	   {score:100,feedback:"Excellent! You're a JavaScript pro!", image: "excellent.jpg"}
-	   ];
-
-for(i=0; i<grading.length; i++) {
-    if(result == grading[i].score) {
-    result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
-	  }
-	  }
-
-
-document.getElementById("grade2").innerHTML = result2;
-
-return false; // required to not refresh the page; just leave this here
-} //this ends the submit function
-
-</script>
-
-
-</div>
+  	<!-- JQUERY -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<!-- BOOTSTRAP -->
+  	<!-- Latest compiled and minified JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<!-- CUSTOM -->
+  	<script type="text/javascript" src="quiz.js"></script>
 </body>
 </html>
