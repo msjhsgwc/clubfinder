@@ -113,10 +113,11 @@ body{
 	font-family: Palatino;
 }
 .clubname{
-	font-family: aliensandcows;
+	font-family: Palatino;
 	font-size: 25px;
 }
 .clubcategory{
-		font-family: Palatino;
-		font-size: 25px;
+
+		font-family: aliensandcows;
+		font-size: 40px;
 }
