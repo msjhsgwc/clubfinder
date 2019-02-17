@@ -24,6 +24,7 @@ body{
 	font-style: normal;
 	font-size: 35px;
 	text-decoration: none;
+
 }
 #nav ul li a{
 	padding: 20px;
@@ -31,14 +32,17 @@ body{
 	color: black;
 	float: center;
 	text-decoration: none;
+	font-family: aliensandcows;
 }
 #nav ul li a:hover{
 	background: #fbfbfb;
 	box-shadow: 0px 1px 1px #666;
 	text-decoration: none;
+	font-family: aliensandcows;
 }
 #nav ul li a:active{
 	background-color: #ff8f00;
+	font-family: aliensandcows;
 }
 #logo{
 	width: 40%;
@@ -46,6 +50,7 @@ body{
 	font-family: aliens_and_cows;
 	display: inline-block;
 	color: black ;
+	
 }
 #clubinfo, #quizqs{
 	font-family: Palatino;
