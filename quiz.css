@@ -13,6 +13,7 @@ body{
 	text-align: center;
 	color: #000000;
 	float: right;
+	font-family: aliensandcows;
 	/*font-family: "Courier New", Courier, monospace;*/
 }
 
@@ -24,6 +25,7 @@ body{
 	font-style: normal;
 	font-size: 35px;
 	text-decoration: none;
+	font-family: aliensandcows;
 
 }
 #nav ul li a{
@@ -50,7 +52,7 @@ body{
 	font-family: aliens_and_cows;
 	display: inline-block;
 	color: black ;
-	
+
 }
 #clubinfo, #quizqs{
 	font-family: Palatino;
