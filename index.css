@@ -116,7 +116,6 @@ body{
 #clubinfo{
 	font-family: Palatino;
 	text-align: center;
-	padding-left: 160px;
 }
 .clubname{
 	font-family: Palatino;
@@ -129,7 +128,6 @@ body{
 #clubindex{
 	font-family: aliensandcows;
 	font-size: 70px;
-	padding-left: 160px;
 }
 .clubblock{
 	width: 50%;
