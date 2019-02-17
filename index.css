@@ -17,19 +17,23 @@ body{
 #nav ul li{
 	display: inline-block;
 	height: 62px;
-	padding-top: 25px;
+	padding-top: 55px;
 	color: black;
 	font-style: normal;
+	font-size: 35px;
+	text-decoration: none;
 }
 #nav ul li a{
 	padding: 20px;
 	background: white;
 	color: black;
 	float: center;
+	text-decoration: none;
 }
 #nav ul li a:hover{
 	background: #fbfbfb;
 	box-shadow: 0px 1px 1px #666;
+	text-decoration: none;
 }
 #nav ul li a:active{
 	background-color: #ff8f00;
@@ -64,6 +68,7 @@ body{
 		  align-items: center;
 		  justify-content: center;
 		  color: white;
+			font-size: 50px;
 		  text-shadow: 0 0 5px #000;
 		}
 
@@ -88,7 +93,7 @@ body{
 
 		/* The styling for the static div. */
 		.static {
-		  background: red;
+		  background: #228B22;
 		}
 
 		/* Sets the actual background images to adorable kitties. This part is crucial. */
