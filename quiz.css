@@ -1,3 +1,11 @@
+@font-face {
+		font-family: aliensandcows; /*a name to be used later*/
+		src: url('aliens_and_cows/aliens_and_cows.ttf')
+}
+
+head{
+	font-family: aliensandcows;
+}
 
 #nav{
 	width: 60%;
