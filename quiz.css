@@ -3,7 +3,7 @@
 		src: url('aliens_and_cows/aliens_and_cows.ttf')
 }
 
-head{
+body{
 	font-family: aliensandcows;
 }
 
