@@ -2,6 +2,52 @@ var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
+var myQuestions = [
+	{
+		question: "What do you do in your free time?",
+		answers: {
+			a: 'hang out with friends',
+			b: 'read',
+			c: 'cook',
+     			d: 'draw or paint',
+   			e: 'listen to music'
+		},
+
+	},
+	{
+		question: "If you were stranded on a desert island with only one item, what would it be?",
+		answers: {
+			a: 'journal',
+			b: 'favorite book',
+			c: 'camera',
+      			d: 'paint',
+      			e: 'basketball'
+		},
+
+	},
+  {
+    question: "Your teacher assigns a group project. Which one are you?",
+    answers: {
+      a: 'you assign tasks and take leadership',
+      b: 'you sit quietly and do your part',
+      c: 'you wait till the night before'
+    },
+   
+  },
+  {
+    question: "What did you want to be when you were little?",
+    answers: {
+      a: 'a doctor',
+      b: 'an engineer',
+      c: 'an actor/actress',
+      d: 'an athlete',
+      e: 'a scientist'
+    },
+   
+  }
+];
+
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 	function showQuestions(questions, quizContainer){
@@ -79,58 +125,4 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 	submitButton.onclick = function(){
 		showResults(questions, quizContainer, resultsContainer);
 	}
-}
-
-var myQuestions = [
-	{
-		question: "What do you do in your free time?",
-		answers: {
-			a: 'hang out with friends',
-			b: 'read',
-			c: 'cook',
-      d: 'draw or paint',
-      e: 'listen to music'
-		},
-
-	},
-	{
-		question: "If you were stranded on a desert island with only one item, what would it be?",
-		answers: {
-			a: 'journal',
-			b: 'favorite book',
-			c: 'camera',
-      d: 'paint',
-      e: 'basketball'
-		},
-
-	},
-  {
-    question: "Your teacher assigns a group project. Which one are you?",
-    answers: {
-      a: 'you assign tasks and take leadership',
-      b: 'you sit quietly and do your part',
-      c: 'you wait till the night before'
-    },
-   
-  },
-  {
-    question: "What did you want to be when you were little?",
-    answers: {
-      a: 'a doctor',
-      b: 'an engineer',
-      c: 'an actor/actress',
-      d: 'an athlete',
-      e: 'a scientist'
-    },
-   
-  }
-];
-
-function showResults(questions, quizContainer, resultsContainer){
-	
-	
-}
-
-submitButton.onclick = function(){
-	showResults(questions, quizContainer, resultsContainer);
 }
