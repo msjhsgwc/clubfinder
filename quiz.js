@@ -100,3 +100,7 @@ function showQuestions(questions, quizContainer){
 	// finally combine our output list into one string of html and put it on the page
 	quizContainer.innerHTML = output.join('');
 }
+
+submitButton.onclick = function(){
+	showResults(questions, quizContainer, resultsContainer);
+}
