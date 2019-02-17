@@ -1,153 +1,71 @@
-var myQuestions = [
-  {
-    question: "What do you do in your free time?",
-    answers: {
-      a: 'hang out with friends',
-      b: 'read',
-      c: 'cook',
-      d: 'draw or paint',
-      e: 'listen to music'
-    },
+// scripts here:
 
-  },
-  {
-    question: "If you were stranded on a desert island with only one item, what would it be?",
-    answers: {
-      a: 'journal',
-      b: 'favorite book',
-      c: 'camera',
-      d: 'paint',
-      e: 'basketball'
-    },
+	function submitQuiz() {
+		console.log('submitted');
 
-  },
-  {
-    question: "Your teacher assigns a group project. Which one are you?",
-    answers: {
-      a: 'you assign tasks and take leadership',
-      b: 'you sit quietly and do your part',
-      c: 'you wait till the night before'
-    },
+	// get each answer score
+		function answerScore (qName) {
+			var radiosNo = document.getElementsByName(qName);
 
-  },
-  {
-    question: "What did you want to be when you were little?",
-    answers: {
-      a: 'a doctor',
-      b: 'an engineer',
-      c: 'an actor/actress',
-      d: 'an athlete',
-      e: 'a scientist'
-    },
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
 
-  }
-];
+	// calc score with answerScore function
+		var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4'));
+		console.log("CalcScore: " + calcScore); // it works!
 
-// var myQuestions = [
-//     {
-//         question: "What is 10/2?",
-//         answers: {
-//             a: '3',
-//             b: '5',
-//             c: '115'
-//         },
-//         correctAnswer: 'b'
-//     },
-//     {
-//         question: "What is 30/3?",
-//         answers: {
-//             a: '3',
-//             b: '5',
-//             c: '10'
-//         },
-//         correctAnswer: 'c'
-//     }
-// ];
+	// function to return correct answer string
+		function correctAnswer (correctStringNo, qNumber) {
+			console.log("qNumber: " + qNumber);  // logs 1,2,3,4 after called below
+			return ("The correct answer for question #" + qNumber + ": &nbsp;<strong>" +
+				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
+			}
 
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
+	// print correct answers only if wrong (calls correctAnswer function)
+		if (answerScore('q1') === 0) {
+			document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
+		}
+		if (answerScore('q2') === 0) {
+			document.getElementById('correctAnswer2').innerHTML = correctAnswer('correctString2', 2);
+		}
+		if (answerScore('q3') === 0) {
+			document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
+		}
+		if (answerScore('q4') === 0) {
+			document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
+		}
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question');
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
 
-    function showQuestions(questions, quizContainer){
-        // we'll need a place to store the output and the answer choices
-        var output = [];
-        var answers;
+	// show score as "score/possible score"
+		var showScore = "Your Score: " + calcScore +"/" + questionCounter;
+	// if 4/4, "perfect score!"
+		if (calcScore === questionCounter) {
+			showScore = showScore + "&nbsp; <strong>Perfect Score!</strong>"
+		};
+		document.getElementById('userScore').innerHTML = showScore;
+	}
 
-        // for each question...
-        for(var i=0; i<questions.length; i++){
+$(document).ready(function() {
 
-            // first reset the list of answers
-            answers = [];
+	$('#submitButton').click(function() {
+		$(this).addClass('hide');
+	});
 
-            // for each available answer...
-            for(letter in questions[i].answers){
-
-                // ...add an html radio button
-                answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-            }
-
-            // add this question and its answers to the output
-            output.push(
-                '<div class="question">' + questions[i].question + '</div>'
-                + '<div class="answers">' + answers.join('') + '</div>'
-            );
-        }
-
-        // finally combine our output list into one string of html and put it on the page
-        quizContainer.innerHTML = output.join('');
-    }
-
-
-    function showResults(questions, quizContainer, resultsContainer){
-
-        // gather answer containers from our quiz
-        var answerContainers = quizContainer.querySelectorAll('.answers');
-
-        // keep track of user's answers
-        var userAnswer = '';
-        var numCorrect = 0;
-
-        // for each question...
-        for(var i=0; i<questions.length; i++){
-
-            // find selected answer
-            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-
-            // if answer is correct
-            if(userAnswer===questions[i].correctAnswer){
-                // add to the number of correct answers
-                numCorrect++;
-
-                // color the answers green
-                answerContainers[i].style.color = 'lightgreen';
-            }
-            // if answer is wrong or blank
-            else{
-                // color the answers red
-                answerContainers[i].style.color = 'red';
-            }
-        }
-
-        // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-    }
-
-    // show questions right away
-    showQuestions(questions, quizContainer);
-
-    // on submit, show results
-    submitButton.onclick = function(){
-        showResults(questions, quizContainer, resultsContainer);
-    }
-
-}
+});
