@@ -39,3 +39,6 @@
 	display: inline-block;
 	color: black ;
 }
+#clubinfo, #quizqs{
+	font-family: Palatino;
+}
