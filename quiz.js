@@ -6,65 +6,65 @@
 
 var prompts = [
 {
-	prompt: 'I enjoy listening/playing music.',
+	prompt: 'I find it difficult to introduce myself to people',
 	weight: -1,
 	class: 'group0'
-},s
+},
 {
-	prompt: 'I enjoy drawing/painting or just using my creativity.',
+	prompt: 'I get so lost in my thoughts I ignore or forget my surroundings',
 	weight: -1,
 	class: 'group1'
 },
 {
-	prompt: 'I enjoy STEM classes and find them interesting.',
+	prompt: 'I do not usually initiate conversations',
 	weight: -1,
 	class: 'group2'
 },
 {
-	prompt: "I enjoy public speaking and taking leadershipp roles.",
+	prompt: 'I prefer not to engage with people who seem angry or upset',
 	weight: -1,
 	class: 'group3'
 },
-// {
-// 	prompt: "Your teacher assigns a group project. Which one are you?",
-// 	weight: -1,
-// 	class: 'group4'
-// },
-// {
-// 	prompt: 'I find it difficult to tell stories about myself',
-// 	weight: -1,
-// 	class: 'group5'
-// },
-// {
-// 	prompt: 'I am usually highly motivated and energetic',
-// 	weight: 1,
-// 	class: 'group6'
-// },
-// {
-// 	prompt: 'I find it easy to walk up to a group of people and join in conversation',
-// 	weight: 1,
-// 	class: 'group7'
-// },
-// {
-// 	prompt: 'Being adaptable is more important than being organized',
-// 	weight: 1,
-// 	class: 'group8'
-// },
-// {
-// 	prompt: 'I care more about making sure no one gets upset than winning a debate',
-// 	weight: 1,
-// 	class: 'group9'
-// },
-// {
-// 	prompt: 'I often do not feel I have to justify myself to people',
-// 	weight: 1,
-// 	class: 'group10'
-// },
-// {
-// 	prompt: 'I would rather improvise than spend time coming up with a detailed plan',
-// 	weight: 1,
-// 	class: 'group11'
-// }
+{
+	prompt: 'I choose my friends carefully',
+	weight: -1,
+	class: 'group4'
+},
+{
+	prompt: 'I find it difficult to tell stories about myself',
+	weight: -1,
+	class: 'group5'
+},
+{
+	prompt: 'I am usually highly motivated and energetic',
+	weight: 1,
+	class: 'group6'
+},
+{
+	prompt: 'I find it easy to walk up to a group of people and join in conversation',
+	weight: 1,
+	class: 'group7'
+},
+{
+	prompt: 'Being adaptable is more important than being organized',
+	weight: 1,
+	class: 'group8'
+},
+{
+	prompt: 'I care more about making sure no one gets upset than winning a debate',
+	weight: 1,
+	class: 'group9'
+},
+{
+	prompt: 'I often do not feel I have to justify myself to people',
+	weight: 1,
+	class: 'group10'
+},
+{
+	prompt: 'I would rather improvise than spend time coming up with a detailed plan',
+	weight: 1,
+	class: 'group11'
+}
 
 ]
 
