@@ -5,97 +5,97 @@
 // If a personlity trait is considered more extroverted, it will have a positive weight.
 
 var prompts = [
-{
-	prompt: "I enjoy listening to music.",
-	weight: -1,
-	class: 'group0'
-},
-{
-	prompt: 'I like playing/learning instruments.',
-	weight: -1,
-	class: 'group1'
-},
-{
-	prompt: 'I like drawing/painting in my free time.',
-	weight: -1,
-	class: 'group2'
-},
-{
-	prompt: 'I like projects that involve creativity.',
-	weight: -1,
-	class: 'group3'
-},
-{
-	prompt: 'I enjoy my STEM classes.',
-	weight: -1,
-	class: 'group4'
-},
-{
-	prompt: 'I like to use my knowledge to solve real-world problems.',
-	weight: -1,
-	class: 'group5'
-},
-{
-	prompt: 'I enjoy public speaking.',
-	weight: 1,
-	class: 'group6'
-},
-{
-	prompt: 'I take leadership roles in group projects.',
-	weight: 1,
-	class: 'group7'
-},
-// {
-// 	prompt: 'Being adaptable is more important than being organized',
-// 	weight: 1,
-// 	class: 'group8'
-// },
-// {
-// 	prompt: 'I care more about making sure no one gets upset than winning a debate',
-// 	weight: 1,
-// 	class: 'group9'
-// },
-// {
-// 	prompt: 'I often do not feel I have to justify myself to people',
-// 	weight: 1,
-// 	class: 'group10'
-// },
-// {
-// 	prompt: 'I would rather improvise than spend time coming up with a detailed plan',
-// 	weight: 1,
-// 	class: 'group11'
-// }
+	{
+		prompt: "I enjoy listening to music.",
+		weight: -1,
+		class: 'group0'
+	},
+	{
+		prompt: 'I like playing/learning instruments.',
+		weight: -1,
+		class: 'group1'
+	},
+	{
+		prompt: 'I like drawing/painting in my free time.',
+		weight: -1,
+		class: 'group2'
+	},
+	{
+		prompt: 'I like projects that involve creativity.',
+		weight: -1,
+		class: 'group3'
+	},
+	{
+		prompt: 'I enjoy my STEM classes.',
+		weight: -1,
+		class: 'group4'
+	},
+	{
+		prompt: 'I like to use my knowledge to solve real-world problems.',
+		weight: -1,
+		class: 'group5'
+	},
+	{
+		prompt: 'I enjoy public speaking.',
+		weight: 1,
+		class: 'group6'
+	},
+	{
+		prompt: 'I take leadership roles in group projects.',
+		weight: 1,
+		class: 'group7'
+	},
+	// {
+	// 	prompt: 'Being adaptable is more important than being organized',
+	// 	weight: 1,
+	// 	class: 'group8'
+	// },
+	// {
+	// 	prompt: 'I care more about making sure no one gets upset than winning a debate',
+	// 	weight: 1,
+	// 	class: 'group9'
+	// },
+	// {
+	// 	prompt: 'I often do not feel I have to justify myself to people',
+	// 	weight: 1,
+	// 	class: 'group10'
+	// },
+	// {
+	// 	prompt: 'I would rather improvise than spend time coming up with a detailed plan',
+	// 	weight: 1,
+	// 	class: 'group11'
+	// }
 
 ]
 
 // This array stores all of the possible values and the weight associated with the value.
 // The stronger agreeance/disagreeance, the higher the weight on the user's answer to the prompt.
 var prompt_values = [
-{
-	value: 'Strongly Agree',
-	class: 'btn-default btn-strongly-agree',
-	weight: 5
-},
-{
-	value: 'Agree',
-	class: 'btn-default btn-agree',
-	weight: 3,
-},
-{
-	value: 'Neutral',
-	class: 'btn-default',
-	weight: 0
-},
-{
-	value: 'Disagree',
-	class: 'btn-default btn-disagree',
-	weight: -3
-},
-{
-	value: 'Strongly Disagree',
-	class: 'btn-default btn-strongly-disagree',
-	weight: -5
-}
+	{
+		value: 'Strongly Agree',
+		class: 'btn-default btn-strongly-agree',
+		weight: 5
+	},
+	{
+		value: 'Agree',
+		class: 'btn-default btn-agree',
+		weight: 3,
+	},
+	{
+		value: 'Neutral',
+		class: 'btn-default',
+		weight: 0
+	},
+	{
+		value: 'Disagree',
+		class: 'btn-default btn-disagree',
+		weight: -3
+	},
+	{
+		value: 'Strongly Disagree',
+		class: 'btn-default btn-strongly-disagree',
+		weight: -5
+	}
 ]
 
 // For each prompt, create a list item to be inserted in the list group
@@ -226,29 +226,43 @@ $('#submit-btn').click(function () {
 		// document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
 		// console.log(document.getElementById('intro-bar').style.width);
 		// document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
-		document.getElementById('results').innerHTML = '<b>You are introverted!</b><br><br>\
-		Introverts are tricky to understand, since it’s so easy for us to assume that introversion is the same as being shy, when, in fact, introverts are simply people who find it tiring to be around other people.\n\
-<br><br>\
-I love this explanation of an introvert’s need to be alone:\n\
-<br><br>\
-For introverts, to be alone with our thoughts is as restorative as sleeping, as nourishing as eating.\n\n\
-<br><br>\
-Introverted people are known for thinking things through before they speak, enjoying small, close groups of friends and one-on-one time, needing time alone to recharge, and being upset by unexpected changes or last-minute surprises. Introverts are not necessarily shy and may not even avoid social situations, but they will definitely need some time alone or just with close friends or family after spending time in a big crowd.\
+		document.getElementById('results').innerHTML = '<b>You should try clubs like:</b><br><br>\
+		MSJ Perfect Noise (Mr. Melcic)\n\
+		<br><br>\
+		MSJ Perfect Noise is a music club where we teach the art of beatboxing, using the mouth and throat as percussion and other instruments to make music. We have student teachers who are happy teach anyone willing to learn, and occasionally hold ciphers to showcase everyone’s personal abilities. We have many performance opportunities throughout the year, including at school organized benefit shows, and our annual Multicultural Week performance. We meet every Monday in C9, so don’t be afraid to come \n\
+		<br>\
+		out even if you have no prior experience at all, or just drop by to hear some amazing beatboxing!\n\n\
+		<br><br><br>\
+		Mission Guitar (Mr. Mallon)\n\
+		<br><br>\
+		The purpose of Mission Guitar is to promote guitar in Mission. Our club will perform at a variety of locations, and raise money for our club. We will perform at parks, senior centers, and schools. Students will receive service learning hours for performances, if applicable.e happy teach anyone willing to learn, and occasionally hold ciphers to showcase everyone’s personal abilities.\n\
+		<br>\\n\n\
+		<br><br><br>\
 		';
 	} else if(total > 0) {
 		document.getElementById('results').innerHTML = '<b>You are extroverted!</b><br><br>\
-		On the opposite side of the coin, people who are extroverted are energized by people. They usually enjoy spending time with others, as this is how they recharge from time spent alone focusing or working hard.\
-<br><br>\
-I like how this extrovert explains the way he/she gains energy from being around other people:\
-<br><br>\
-When I am among people, I make eye contact, smile, maybe chat if there’s an opportunity (like being stuck in a long grocery store line). As an extrovert, that’s a small ‘ping’ of energy, a little positive moment in the day.';
+		National Art Honors Society (Mr. Christensen)\n\
+		<br><br>\
+		NAHS is a club here students explore their interests in art. At our meetings, we work on club and personal projects, and get to know each other well. Club bonding is held on field trips and outside activities. Club projects include murals for the school, participation in the yearly trashy fashion show, art exhibitions, and smaller fun crafts. \n\
+		\n\n\
+		<br><br><br>\
+		MSJ VAMS (Ms. Sepulveda)\n\
+		<br><br>\
+		MSJ Visual Arts and Music for Society otherwise known as MSJ VAMS is a service club based on the Visual Arts and Music. Our goal is to serve the community through the Arts and hope to bring these activities to underprivileged communities.\n\
+		<br>\
+		';
 	} else {
 		document.getElementById('results').innerHTML = '<b>You are ambiverted!</b><br><br>\
-		Since introverts and extroverts are the extremes of the scale, the rest of us fall somewhere in the middle. Many of us lean one way or the other, but there are some who are quite balanced between the two tendencies. These people are called ambiverts.\
-<br><br>\
-So let’s look at how an ambivert compares.\
-<br><br>\
-Ambiverts exhibit both extroverted and introverted tendencies. This means that they generally enjoy being around people, but after a long time this will start to drain them. Similarly, they enjoy solitude and quiet, but not for too long. Ambiverts recharge their energy levels with a mixture of social interaction and alone time.'
+		MSJ Tech and Robotics (Mr. Brucker)\n\
+		<br><br>\
+		 The Tech and Robotics Club, Mission San Jose’s premier science, engineering and technology organization, welcomes students who seek to live on the edge of modern technological achievement. A diverse number of valuable opportunities, from competitive events to volunteering roles, are available to active members. We are home to MSJ’s FIRST Tech Challenge and are in charge of MSJ’s experienced Team America Rocketry Challenge program. No prior experience is necessary! Visit us at www.msjrobotics.com, or contact us at roboticsmsj@gmail.com. Join us, and experience engineering, teamwork, and success at its finest! \n\
+		\n\n\
+		<br><br><br>\
+			MSJ Neuroscience (Ms. Kuei)\n\
+		<br><br>\
+		MSJ Neuroscience aims to provide students an opportunity to explore and enjoy a flourishing field of study. This club strives to provide members with insight into, a deeper understanding of, and an appreciation for the field of neuroscience. Club activities include guest speaker presentations, technology demonstrations, facility tours, external competitions, and intramural competitions.\n\
+		<br>\
+		';
 	}
 
 	// Hide the quiz after they submit their results
