@@ -34,6 +34,7 @@ body{
 	float: center;
 	text-decoration: none;
 	font-family: aliensandcows;
+	font-size: 35px;
 }
 #nav ul li a:hover{
 	background: #fbfbfb;
